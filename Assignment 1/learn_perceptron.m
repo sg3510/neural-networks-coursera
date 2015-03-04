@@ -112,7 +112,7 @@ for i=1:num_neg_examples
     activation = this_case*w;
     if (activation >= 0)
         %YOUR CODE HERE
-        delta = 1/10; 
+        delta = 1; 
         w = w + delta*x*(-1-activation)';
     end
 end
@@ -122,7 +122,7 @@ for i=1:num_pos_examples
     activation = this_case*w;
     if (activation < 0)
         %YOUR CODE HERE
-        delta = 1/10; 
+        delta = 1; 
         w = w + delta*x*(1-activation)';
     end
 end
